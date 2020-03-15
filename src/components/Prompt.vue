@@ -8,39 +8,40 @@
 </template>
 
 <script>
-    import axios from 'axios'
-    import Share from '@/components/Share.vue'
+import axios from "axios";
+import Share from "@/components/Share.vue";
 
-    export default {
-        components: {
-            Share
-        },
+export default {
+    components: {
+        Share
+    },
 
-        data() {
-            return {
-                prompt: null
-            }
-        },
+    data() {
+        return {
+            prompt: null
+        };
+    },
 
-        mounted() {
-            this.getPrompt()
-        },
+    mounted() {
+        this.getPrompt();
+    },
 
-        methods: {
-            getPrompt() {
-                axios
-                    .get('http://localhost:8080/data/prompts.json')
-                    .then(result => {
-                        const prompts = result.data.prompts
-                        this.prompt =
-                            prompts[Math.floor(Math.random() * prompts.length)]
-                    })
-                    .catch(err => {
-                        console.log(err)
-                    })
-            }
+    methods: {
+        getPrompt() {
+            const getUrl = `${window.location}/data/prompts.json`;
+            axios
+                .get(getUrl)
+                .then(result => {
+                    const prompts = result.data.prompts;
+                    this.prompt =
+                        prompts[Math.floor(Math.random() * prompts.length)];
+                })
+                .catch(err => {
+                    console.log(err);
+                });
         }
     }
+};
 </script>
 
 <style lang="scss" scoped></style>
