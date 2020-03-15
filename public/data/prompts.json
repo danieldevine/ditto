@@ -1,0 +1,510 @@
+{
+    "prompts": [
+        {
+            "prompt": "Keep a dream journal. Write down what you dreamt of first thing every morning.",
+            "category": "Journal "
+        },
+
+        {
+            "prompt": "Keep a food journal. Describe your favourite thing that you’ve eaten each day. What did it taste/smell/feel like?",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a weather journal. Describe the weather every day in as much detail as you can.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a minor annoyances journal. Describe one thing that bugged you.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a sky journal. Spend five minutes every day looking at the sky and describe it in as much detail as you can.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a reading journal. Take note of your favourite thing (it might only be a word or a sentence) you read every day.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a song journal. What songs did you listen to? See if there are any patterns. Did you listen to the same song every day? Is there a particular time of day you like to listen to songs? ",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a coincidence journal. Note any weird coincidences that you spot.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a room journal. Describe all the rooms you spent time in today. What do they look/sound/ feel/ smell like?",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Write a list poem of things you hate.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a love poem to the moon.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Keep a lunch journal. Write down what you have for lunch every day. Describe it in as much detail as you can (smell/ taste/ texture) and give your opinion.",
+            "category": "Journal"
+        },
+        {
+            "prompt": "Keep a walking journal. Go for a walk every day and describe one thing you see.",
+            "category": "Journal"
+        },
+        {
+            "prompt": "Write a list poem of things you love.",
+            "category": "Poem"
+        },
+        {
+            "prompt": "Keep an ideas journal. Note the weirdest, funniest or most comforting idea that pops into your head every day.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Write a poem beginning 'I remember...'",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Keep a round things journal. Make note of every round object you see in a day.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a square things journal. Make note of every square object you see in a day.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Keep a soft things journal. Make note of every soft object you see in a day.",
+            "category": "Journal"
+        },
+
+        {
+            "prompt": "Wish poem: write a poem beginning ‘I wish…’",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Comparison poem: write a poem comparing two things.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Love poem to an object: write a poem telling an object how much you love it and why.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Song poem: listen to your favourite song; write down the words that pop into your head while listening; put them in a poem.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Found poem: pick up a book; open it on page 76; choose any 10 words; put them in a poem.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Dream poem: write a poem beginning ‘Last night I dreamt…’",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Love poem to a pet: write a poem to your pet, telling them why you love them.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Kitchen machine poem: go into your kitchen; find a useful appliance or gadget there; write a poem telling it how it makes your life better.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Furniture poem: write a love poem to your favourite item of furniture.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Newspaper poem: take a random line from a newspaper article and use it as the first line of your poem.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Total rhyme: write a poem about anything where all the lines rhyme (use rhymezone to help you find good rhyming words).",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Internal rhyme poem: write a poem about anything where each line has an internal rhyme (use rhymezone to help you find good rhyming words).",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem that doesn’t use the word ‘the.’",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem with no adjectives.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Simile poem: write a poem with a simile in every line.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Metaphor poem: write a poem with a metaphor in every line.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Find a poem you like. Remove all the verbs and replace them with new ones.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Find a poem you like. Remove all the nouns and replace them with new ones.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem in rhyming couplets.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem that describes an object in your house. Don’t name the object or give the poem a title. Give the poem to someone to read and see if they can guess the object.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem that describes your favourite song. Don’t name the song or give the poem a title. Give the poem to someone to read and see if they can guess the song.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem that describes your favourite food. Don’t name the food or give the poem a title. Give the poem to someone to read and see if they can guess the food.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a poem about yourself without using the word ‘I’.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from your favourite poem and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from your favourite story and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from a nursery rhyme and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from your favourite song and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from your science textbook and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from your geography textbook and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Take a line from your history textbook and use it as the first line of a poem of your own.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a Shakespearean sonnet (a 14-line poem with the rhyme scheme abab cdcd efef gg)",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a quatrain (4-line poem) with the rhyme scheme abab.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a Limerick (a 5-line poem with the rhyme scheme aabba)",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line). It should refer to something in the natural world.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line) about Spring.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line) about bees.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line) about your pet.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line) about cheese.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line) about grass.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a haiku (a 3-line poem with 5 syllables in the 1st line, 7 syllables in the 2nd line and 5 syllables in the 3rd line) about your garden.",
+            "category": "Poem"
+        },
+
+        {
+            "prompt": "Write a story in which all the characters have the same name.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a story about a scientist whose invention changes the world.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Rewrite the story of ‘Little Red Riding Hood’ from the wolf’s point of view.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Rewrite the story of ‘The Three Little Pigs’ from the wolf’s point of view.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Rewrite ‘Cinderella’ from the point of view of one of the ugly sisters.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a new chapter for your favourite book. It can come before, after or during the story.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Choose a minor character from a book who you feel doesn’t get enough attention and write a story where they are the central character.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Choose a story whose ending left you unsatisfied and rewrite the ending.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe the setting for the opening scene of a horror story.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe the setting for the opening scene of a ghost story.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe the setting for the opening scene of a love story.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe the setting for the opening scene of a detective story.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Invent and describe a new superhero.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Invent and describe the characters for a new TV sitcom",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a ghost story in five paragraphs.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a love story in five paragraphs.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a detective story in five paragraphs.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a horror story in five paragraphs.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Invent and describe a new animal.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe a day in the life of a jungle animal.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe a day in the life of a farm animal.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe a day in the life of a pet.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Describe a day in the life of a sea creature.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how a common household object was invented.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to write.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to sing.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to bake bread.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to make clothes.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to draw.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to grow crops.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to catch fish.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write the story of how people discovered how to swim.",
+            "category": "Story"
+        },
+
+        {
+            "prompt": "Write a speech to persuade your classmates that school should be optional.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech to present your latest invention to the world.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech to persuade your classmates of the value of reading.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech to persuade your classmates of the importance of music.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech made entirely of questions.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech made entirely of language you’ve found on the internet.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech made entirely of song lyrics.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech to persuade the minister for education to change the school system.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech to encourage your classmates to do random acts of kindness.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech for your classmates on the wonders of technology.",
+            "category": "Speech"
+        },
+
+        {
+            "prompt": "Write a speech for your classmates on the importance of quiet time on your own.",
+            "category": "Speech"
+        }
+    ]
+}

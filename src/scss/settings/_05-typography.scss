@@ -1,0 +1,65 @@
+:root {
+    --key_font: proxima-nova, sans-serif;
+    --title_font: proxima-nova, sans-serif;
+}
+
+//possible scales
+$goldenRatio: 1.61803398875;
+$perfectFourth: 1.333;
+$majorSecond: 1.125;
+
+$typeScale: $majorSecond;
+
+//https://design-system.barnardos.org.uk/components/content/#type
+
+@function typeScale($exponent) {
+    $value: 1;
+
+    @if $exponent > 0 {
+        @for $i from 1 through $exponent {
+            $value: $value * $typeScale;
+        }
+    } @else {
+        @for $i from $exponent to 0 {
+            $value: $value / $typeScale;
+        }
+    }
+
+    @return $value * 1rem;
+}
+
+@function baseLine($exponent) {
+    $value: $typeScale;
+
+    @if $exponent > 0 {
+        @for $i from 1 through $exponent {
+            $value: $value * $typeScale;
+        }
+    } @else {
+        @for $i from $exponent to 0 {
+            $value: $value / $typeScale;
+        }
+    }
+
+    @return $value * 1rem;
+}
+
+$fontSize: 16px;
+$lineHeight: 1.5;
+
+@mixin base-typography {
+    font-family: var(--key_font);
+    font-weight: 400;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-style: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin titleText {
+    font-family: var(--title_font);
+    font-weight: 600;
+}

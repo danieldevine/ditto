@@ -1,0 +1,168 @@
+@use "sass:color";
+@mixin button(
+    $background: #333333,
+    $color: #ffffff,
+    $borderColour: transparent
+) {
+    color: $color;
+    border-radius: 0;
+    padding: $typeScale * 1rem;
+    font-size: typeScale(-2);
+    letter-spacing: 1.5px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: $background;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.25s ease all;
+    border: 1px solid $borderColour;
+
+    .icon {
+        font-size: typeScale(-2);
+        margin-right: 0.5rem;
+    }
+
+    &:before {
+        content: '';
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--ditto_grey);
+        mix-blend-mode: multiply;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        &:before {
+            opacity: 0.3;
+        }
+    }
+}
+
+/**
+ * Standardise padding where possible
+ * N.B changed from standard mixin to allow for side padding.
+ */
+@mixin sectionPad($top: 6rem, $bottom: $top) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+
+    @include mobile {
+        padding-top: $top / 2;
+        padding-bottom: $bottom / 2;
+    }
+}
+
+@mixin icon_link($include_arrow: true) {
+    color: var(--ultra_green);
+    font-family: var(--key_font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.78;
+    letter-spacing: -0.017rem;
+
+    &:before,
+    .icon {
+        @if ($include_arrow) {
+            font-family: var(--icon_font);
+            content: $icon_arrow;
+        }
+
+        color: var(--primary_colour);
+        font-size: 0.938rem;
+        padding-right: 0.5rem;
+        transition: 0.3s ease all;
+    }
+
+    &:hover {
+        &:before,
+        .icon {
+            padding-right: 0.2rem;
+        }
+    }
+}
+
+.cta__link,
+.icon__link {
+    @include icon_link(false);
+}
+
+@mixin gridBlock($columns: 4) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+
+    @include mobile {
+        display: block;
+    }
+
+    @include iego {
+        display: flex;
+        flex-wrap: wrap;
+
+        > div,
+        > li {
+            margin: 1rem;
+        }
+    }
+}
+
+@mixin backgroundImage($position: 'right') {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+    @include iego {
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: $position;
+        @include iego {
+            height: auto;
+            min-height: 100%;
+        }
+    }
+}
+
+/**
+ * Hey look its a grid system lol
+ * Divide the viewport by six and multiply by the desired amount of columns.
+ *
+ **/
+@function columnWidths($columns) {
+    $cols: (100vw / 12) * $columns;
+    @return $cols;
+}
+
+/**
+ * automagically move grid items to end of grid
+ * if there are fewer items than a full row.
+ **/
+@mixin gridPlacement($columns, $filled) {
+    $limit: $columns - 1;
+    @if $filled < 3 {
+        @for $i from 1 through $limit {
+            &:nth-of-type(#{$i}) {
+                grid-column-end: $limit + $i;
+            }
+        }
+
+        &:nth-of-type(#{$filled}) {
+            grid-column-end: $columns + 1;
+        }
+    }
+}

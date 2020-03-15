@@ -1,0 +1,85 @@
+/*media query variables*/
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1090px;
+$laptop-height: 750px;
+$laptop-width: 1366px;
+
+@mixin mobile {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+/* media query for mid-size mobile */
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+/* media query for all mobile */
+
+@mixin tablet-and-mobile {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+/* prevent wrapper from bumping the edges */
+
+@mixin small-desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin tiny-desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: 1220px) {
+        @content;
+    }
+}
+
+/* media query for desktop only */
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin widescreen {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+@media print {
+}
+
+/* target the ipad to fight against fixed position scroll weirdness */
+
+@mixin ipad {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin wrapper-save {
+    @media (min-width: calc(#{$max_wrapper_width} - 10px)) {
+        @content;
+    }
+}
+
+@mixin menuBreak {
+    @media (max-width: 1217px) {
+        @content;
+    }
+}
+
+@mixin desktopMenu {
+    @media (min-width: 1218px) {
+        @content;
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+    --wrapper_width: 1133px;
+    --wrapper_narrow_width: 1133px;
+    --banner_height: 70px;
+    --banner_height_scrolled: 60px;
+    --menu_shift: 80%;
+    --measure: 860px;
+    --header_min_height: 728px;
+}
+
+@include menuBreak {
+    :root {
+        --menu_shift: 400px;
+    }
+}
+
+@include mobile {
+    :root {
+        --menu_shift: 80%;
+        --header_min_height: auto;
+    }
+}

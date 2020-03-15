@@ -1,0 +1,11 @@
+@mixin iosgo {
+    @supports (-webkit-overflow-scrolling: touch) {
+        @content;
+    }
+}
+
+@mixin iego {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
