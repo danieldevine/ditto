@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include titleText();
+    margin-bottom: ($typeScale) * 1rem;
+
+    @include tablet-and-mobile {
+        br {
+            display: none;
+        }
+    }
+}
+
+h1 {
+    font-size: typeScale(12);
+    line-height: baseLine(12);
+    font-weight: 700;
+
+    @include mobile {
+        font-size: typeScale(10);
+        line-height: baseLine(9);
+    }
+}
+
+h2 {
+    font-size: typeScale(11);
+    line-height: baseLine(11);
+
+    @include tablet {
+        font-size: typeScale(9);
+        line-height: baseLine(9);
+    }
+
+    @include mobile {
+        font-size: typeScale(8);
+        line-height: baseLine(8);
+    }
+}
+
+h3 {
+    font-size: typeScale(5);
+    line-height: baseLine(5);
+}
+
+h4 {
+    font-size: typeScale(4);
+    line-height: baseLine(4);
+}
+
+h5 {
+    font-size: typeScale(3);
+    line-height: baseLine(3);
+}
+
+h6 {
+    font-size: typeScale(2);
+    line-height: baseLine(2);
+    margin-bottom: baseLine(-2);
+}
+
+p {
+    font-size: 1rem;
+}

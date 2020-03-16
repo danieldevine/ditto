@@ -1,6 +1,6 @@
 :root {
-    --key_font: proxima-nova, sans-serif;
-    --title_font: proxima-nova, sans-serif;
+    --key_font: futura-pt, sans-serif;
+    --title_font: futura-pt, sans-serif;
 }
 
 //possible scales
@@ -53,7 +53,6 @@ $lineHeight: 1.5;
     font-size: $fontSize;
     line-height: $lineHeight;
     font-style: normal;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -61,5 +60,5 @@ $lineHeight: 1.5;
 
 @mixin titleText {
     font-family: var(--title_font);
-    font-weight: 600;
+    font-weight: 700;
 }
