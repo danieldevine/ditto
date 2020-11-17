@@ -24,7 +24,8 @@
                 you writing. To get a new prompt, click on a category (journal,
                 poem, story or speech) if you’d prefer a particular genre, or
                 click ‘random’ if you have no preference. <br />
-                <span>By <strong> Ellen Dillon</strong></span>
+                <span>Prompts By <strong> Ellen Dillon</strong></span>
+                <span>Built By <strong> Dan Devine</strong></span>
             </div>
         </div>
 
@@ -52,7 +53,7 @@ export default {
         return {
             prompt: null,
             categories: null,
-            currentCategory: "Random"
+            currentCategory: "Random",
         };
     },
 
@@ -65,10 +66,10 @@ export default {
         getPrompt(sort) {
             const getUrl = `${window.location}/data/prompts.json`;
 
-            axios.get(getUrl).then(result => {
+            axios.get(getUrl).then((result) => {
                 if (sort != "Random") {
                     const prompts = result.data.prompts.filter(
-                        prompt => prompt.category == sort
+                        (prompt) => prompt.category == sort
                     );
                     this.prompt =
                         prompts[Math.floor(Math.random() * prompts.length)];
@@ -83,11 +84,11 @@ export default {
         getCategories() {
             const getUrl = `${window.location}/data/prompts.json`;
 
-            axios.get(getUrl).then(result => {
+            axios.get(getUrl).then((result) => {
                 const prompts = result.data.prompts;
                 let categories = new Set();
 
-                prompts.forEach(element => {
+                prompts.forEach((element) => {
                     categories.add(element.category);
                 });
 
@@ -98,8 +99,8 @@ export default {
         updateCategory(category) {
             this.currentCategory = category;
             this.getPrompt(this.currentCategory);
-        }
-    }
+        },
+    },
 };
 </script>
 <style lang="scss" scoped>
