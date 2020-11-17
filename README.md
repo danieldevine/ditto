@@ -25,3 +25,7 @@ npm run build
 ```
 npm run lint
 ```
+
+### Deploy
+
+follow these instructions: https://cli.vuejs.org/guide/deployment.html#github-pages
